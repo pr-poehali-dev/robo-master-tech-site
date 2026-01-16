@@ -53,10 +53,10 @@ const Index = () => {
             Технологии будущего уже сегодня
           </Badge>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            Творческая мастерская
+            Техническая мастерская
             <br />
             <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              робототехники
+              "РобоМастер"
             </span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

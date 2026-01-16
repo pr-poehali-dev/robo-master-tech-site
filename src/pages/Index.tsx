@@ -37,8 +37,7 @@ const Index = () => {
               <a href="#schedule" className="hover:text-primary transition-colors">Расписание</a>
               <a href="#gallery" className="hover:text-primary transition-colors">Проекты</a>
               <a href="#achievements" className="hover:text-primary transition-colors">Достижения</a>
-              <a href="#reviews" className="hover:text-primary transition-colors">Отзывы</a>
-              <a href="#faq" className="hover:text-primary transition-colors">FAQ</a>
+
             </div>
             <Button asChild className="animate-glow">
               <a href="#register">Записаться</a>
@@ -299,96 +298,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="reviews" className="py-20 px-4 bg-card/30">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <Badge className="mb-4">
-              <Icon name="MessageSquare" size={16} className="mr-1" />
-              Отзывы
-            </Badge>
-            <h2 className="text-4xl font-bold mb-4">Что говорят родители</h2>
-            <p className="text-muted-foreground">Реальные отзывы о нашей студии</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {[
-              {
-                name: 'Елена Смирнова',
-                text: 'Сын занимается уже год. Стал более усидчивым, появился интерес к технике. Спасибо педагогу!',
-                rating: 5,
-              },
-              {
-                name: 'Дмитрий Петров',
-                text: 'Отличная студия! Дочь в восторге от занятий, постоянно показывает свои проекты дома.',
-                rating: 5,
-              },
-              {
-                name: 'Анна Ковалёва',
-                text: 'Профессиональный подход к обучению. Ребёнок уже выиграл своё первое соревнование!',
-                rating: 5,
-              },
-            ].map((review, i) => (
-              <Card key={i} className="hover:shadow-xl transition-all duration-300">
-                <CardHeader>
-                  <div className="flex gap-1 mb-2">
-                    {[...Array(review.rating)].map((_, j) => (
-                      <Icon key={j} name="Star" size={16} className="text-yellow-400 fill-yellow-400" />
-                    ))}
-                  </div>
-                  <CardTitle className="text-lg">{review.name}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{review.text}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      <section id="faq" className="py-20 px-4">
-        <div className="container mx-auto max-w-3xl">
-          <div className="text-center mb-12">
-            <Badge className="mb-4">
-              <Icon name="HelpCircle" size={16} className="mr-1" />
-              FAQ
-            </Badge>
-            <h2 className="text-4xl font-bold mb-4">Часто задаваемые вопросы</h2>
-            <p className="text-muted-foreground">Ответы на популярные вопросы</p>
-          </div>
-          <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="item-1">
-              <AccordionTrigger>С какого возраста можно начинать?</AccordionTrigger>
-              <AccordionContent>
-                Мы принимаем детей от 6 лет. Для каждой возрастной группы разработана своя программа обучения.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-2">
-              <AccordionTrigger>Нужно ли покупать конструкторы?</AccordionTrigger>
-              <AccordionContent>
-                Нет, все необходимое оборудование предоставляется студией. У нас есть полный набор LEGO и другой техники.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3">
-              <AccordionTrigger>Сколько детей в группе?</AccordionTrigger>
-              <AccordionContent>
-                В группе максимум 8 человек. Это позволяет педагогу уделить внимание каждому ребёнку.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-4">
-              <AccordionTrigger>Можно ли посетить пробное занятие?</AccordionTrigger>
-              <AccordionContent>
-                Да, первое занятие бесплатное! Это позволит ребёнку познакомиться с форматом и принять решение.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-5">
-              <AccordionTrigger>Участвуют ли дети в соревнованиях?</AccordionTrigger>
-              <AccordionContent>
-                Обязательно! Мы регулярно участвуем в городских и всероссийских соревнованиях по робототехнике.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </div>
-      </section>
 
       <section id="register" className="py-20 px-4 bg-gradient-to-r from-primary/20 via-secondary/20 to-accent/20">
         <div className="container mx-auto max-w-2xl">

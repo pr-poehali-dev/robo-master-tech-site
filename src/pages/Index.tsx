@@ -89,10 +89,10 @@ const Index = () => {
                 Педагог
               </Badge>
               <h2 className="text-4xl font-bold mb-6">
-                Александр Иванов
+                Татьяна Владимировна Яковлева
               </h2>
               <p className="text-lg text-muted-foreground mb-4">
-                Сертифицированный преподаватель робототехники с 8-летним опытом работы с детьми.
+                Педагог дополнительного образования с 8-летним опытом работы с детьми.
               </p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-3">
@@ -121,7 +121,7 @@ const Index = () => {
             <div className="rounded-xl overflow-hidden h-96">
               <img 
                 src="https://cdn.poehali.dev/projects/ef2d2f98-a731-4f6a-856c-ae7ba774a4aa/files/734450e1-f645-4b65-95a8-90352f4785b1.jpg"
-                alt="Александр Иванов - преподаватель робототехники"
+                alt="Татьяна Владимировна Яковлева - педагог дополнительного образования"
                 className="w-full h-full object-cover"
               />
             </div>
